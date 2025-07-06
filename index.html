@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevJobs - Tech Job Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">DevJobs</div>
+            <nav class="nav-links">
+                <a href="#">Post a Job</a>
+                <a href="#">Login</a>
+            </nav>
+        </header>
+        
+        <aside class="filters">
+            <div class="filter-section">
+                <h3>Filter Jobs</h3>
+                
+                <div class="filter-group">
+                    <label for="role">Job Role</label>
+                    <select id="role">
+                        <option value="">All Roles</option>
+                        <option value="frontend">Frontend Developer</option>
+                        <option value="backend">Backend Developer</option>
+                        <option value="fullstack">Full Stack Developer</option>
+                        <option value="devops">DevOps Engineer</option>
+                        <option value="mobile">Mobile Developer</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="tech-stack">Tech Stack</label>
+                    <select id="tech-stack">
+                        <option value="">All Technologies</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="js">JavaScript</option>
+                        <option value="react">React</option>
+                        <option value="angular">Angular</option>
+                        <option value="vue">Vue</option>
+                        <option value="node">Node.js</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="location">Location</label>
+                    <select id="location">
+                        <option value="">All Locations</option>
+                        <option value="remote">Remote</option>
+                        <option value="us">United States</option>
+                        <option value="europe">Europe</option>
+                        <option value="asia">Asia</option>
+                        <option value="canada">Canada</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="experience">Experience Level</label>
+                    <select id="experience">
+                        <option value="">All Levels</option>
+                        <option value="intern">Intern</option>
+                        <option value="junior">Junior (0-2 yrs)</option>
+                        <option value="mid">Mid-level (2-5 yrs)</option>
+                        <option value="senior">Senior (5+ yrs)</option>
+                    </select>
+                </div>
+            </div>
+        </aside>
+        
+        <main>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for jobs by title, company, or keyword...">
+            </div>
+            
+            <div class="job-grid">
+                <!-- Job Card 1 -->
+                <article class="job-card">
+                    <h3 class="job-title">Senior React Developer</h3>
+                    <p class="company-name">TechVision Inc.</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span>Remote (US only)</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag react">React</span>
+                        <span class="tag js">TypeScript</span>
+                        <span class="tag css">CSS</span>
+                        <span class="tag html">HTML5</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </article>
+                
+                <!-- Job Card 2 -->
+                <article class="job-card">
+                    <h3 class="job-title">DevOps Engineer</h3>
+                    <p class="company-name">CloudNova</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span>San Francisco, CA</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">AWS</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">CI/CD</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </article>
+                
+                <!-- Job Card 3 -->
+                <article class="job-card">
+                    <h3 class="job-title">Frontend Architect</h3>
+                    <p class="company-name">Digital Futures</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span>New York, NY</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag react">React</span>
+                        <span class="tag js">JavaScript</span>
+                        <span class="tag">Redux</span>
+                        <span class="tag">Webpack</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </article>
+                
+                <!-- Job Card 4 -->
+                <article class="job-card">
+                    <h3 class="job-title">Full Stack Developer</h3>
+                    <p class="company-name">WebCraft Solutions</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span>Remote (Global)</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag js">Node.js</span>
+                        <span class="tag react">React</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">GraphQL</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </article>
+                
+                <!-- Job Card 5 -->
+                <article class="job-card">
+                    <h3 class="job-title">iOS Developer</h3>
+                    <p class="company-name">MobileFirst</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span>Toronto, Canada</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Swift</span>
+                        <span class="tag">iOS</span>
+                        <span class="tag">UIKit</span>
+                        <span class="tag">SwiftUI</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </article>
+                
+                <!-- Job Card 6 -->
+                <article class="job-card">
+                    <h3 class="job-title">UX Engineer</h3>
+                    <p class="company-name">DesignHub</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span>London, UK</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag html">HTML</span>
+                        <span class="tag css">CSS</span>
+                        <span class="tag js">JavaScript</span>
+                        <span class="tag">Figma</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </article>
+                
+                <!-- Job Card 7 -->
+                <article class="job-card">
+                    <h3 class="job-title">Backend Developer (Python)</h3>
+                    <p class="company-name">DataSystems</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span>Berlin, Germany</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">AWS</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </article>
+                
+                <!-- Job Card 8 -->
+                <article class="job-card">
+                    <h3 class="job-title">JavaScript Instructor</h3>
+                    <p class="company-name">CodeAcademy</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span>Remote (Worldwide)</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag js">JavaScript</span>
+                        <span class="tag">Teaching</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag react">React</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </article>
+                
+                <!-- Job Card 9 -->
+                <article class="job-card">
+                    <h3 class="job-title">Angular Developer</h3>
+                    <p class="company-name">EnterpriseSoft</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span>Chicago, IL</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Angular</span>
+                        <span class="tag js">TypeScript</span>
+                        <span class="tag">RxJS</span>
+                        <span class="tag">NgRx</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </article>
+                
+                <!-- Job Card 10 -->
+                <article class="job-card">
+                    <h3 class="job-title">Junior Frontend Developer</h3>
+                    <p class="company-name">StartUp Ventures</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span>Austin, TX</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag html">HTML</span>
+                        <span class="tag css">CSS</span>
+                        <span class="tag js">JavaScript</span>
+                        <span class="tag react">React</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </article>
+                
+                <!-- Job Card 11 -->
+                <article class="job-card">
+                    <h3 class="job-title">Blockchain Developer</h3>
+                    <p class="company-name">CryptoChain</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span>Remote (Europe)</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Solidity</span>
+                        <span class="tag js">JavaScript</span>
+                        <span class="tag">Ethereum</span>
+                        <span class="tag">Web3</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </article>
+                
+                <!-- Job Card 12 -->
+                <article class="job-card">
+                    <h3 class="job-title">QA Automation Engineer</h3>
+                    <p class="company-name">TestRight</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span>Boston, MA</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Selenium</span>
+                        <span class="tag js">JavaScript</span>
+                        <span class="tag">Cypress</span>
+                        <span class="tag">Jest</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </article>
+                
+                <!-- Job Card 13 -->
+                <article class="job-card">
+                    <h3 class="job-title">Vue.js Developer</h3>
+                    <p class="company-name">ModernWeb</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span>Seattle, WA</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Vue</span>
+                        <span class="tag js">TypeScript</span>
+                        <span class="tag">Pinia</span>
+                        <span class="tag">Vuex</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </article>
+                
+                <!-- Job Card 14 -->
+                <article class="job-card">
+                    <h3 class="job-title">Technical Lead</h3>
+                    <p class="company-name">Innovatech</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span>Remote (US/Canada)</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag react">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Leadership</span>
+                        <span class="tag">Architecture</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </article>
+                
+                <!-- Job Card 15 -->
+                <article class="job-card">
+                    <h3 class="job-title">Android Developer</h3>
+                    <p class="company-name">MobileXperts</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span>Los Angeles, CA</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Kotlin</span>
+                        <span class="tag">Android</span>
+                        <span class="tag">Jetpack</span>
+                        <span class="tag">Compose</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </article>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
